@@ -25,6 +25,9 @@ for filename in os.listdir("./UIEB_dataset/input"):
     g_new = g_origin + d_G
     r_new = r_origin + d_R
 
+    #Optimized contrast
+    
+
     #Finish
     processed_image = cv2.merge([b_new, g_new, r_new])
     cv2.imwrite(output_png_path, processed_image)
